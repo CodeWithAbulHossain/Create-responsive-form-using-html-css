@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+}
+#appointments {
+  height: 90vh;
+  max-width: 1280px;
+  margin: 15px auto;
+  border-radius: 20px;
+}
+.doctor-img img {
+  border-radius: 12px;
+}
+.doctors-appointments {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.doctor-img {
+  width: 40%;
+}
+.appointments-form {
+  width: 60%;
+}
+.appointments-form h2 {
+  text-align: center;
+  font-size: 18px;
+  color: darkblue;
+  padding: 15px;
+}
+
+.appointments-form form {
+  padding: 15px;
+  border: 0.5px solid darkgray;
+  border-radius: 8px;
+}
+.appointments-form input {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+
+.appointments-form textarea {
+  font-family: "Poppins", sans-serif;
+  height: 150px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+
+.gender-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.gender {
+  margin-top: 20px;
+}
+.gender input {
+  width: 30px;
+  height: 15px;
+}
+.form-btn {
+  background-color: darkblue;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 2580px) {
+  .doctors-appointments {
+    width: 98%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  .doctor-img {
+    width: 100%;
+  }
+  .appointments-form {
+    width: 100%;
+    background-color: rgb(243, 224, 200);
+    border-radius: 12px;
+  }
+  .doctor-img img {
+    width: 100%;
+    height: 575px;
+  }
+}
+
+@media (max-width: 991px) {
+  .doctors-appointments {
+    width: 98%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 10px 15px;
+  }
+  .doctor-img {
+    width: 100%;
+  }
+  .appointments-form {
+    width: 100%;
+  }
+}

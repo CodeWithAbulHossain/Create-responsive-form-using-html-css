@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Responsive Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="appointments">
+      <section>
+        <div class="doctors-appointments">
+          <div class="doctor-img">
+            <img width="100%" height="100%" src="./doctor.jpg" alt="" />
+          </div>
+          <div class="appointments-form">
+            <form action="https://formspree.io/f/mrbzbovb" method="POST">
+              <div><h2>Book a consultation</h2></div>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="your_name"
+                id="your_name"
+              />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name="your_email"
+                id="your_email"
+              />
+              <textarea
+                placeholder="Enter your message"
+                name="your_message"
+                id="your_message"
+              ></textarea>
+
+              <div class="gender-group">
+                <label class="gender-label" for="gender">Choose Gender</label>
+                <div class="gender">
+                  <label for="gender">Male</label>
+                  <input type="radio" name="gender" id="gender" value="Male" />
+                  <label for="gender">Female</label>
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="gender"
+                    value="Female"
+                  />
+                </div>
+              </div>
+              <input type="submit" value="Book my Call" class="form-btn" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
